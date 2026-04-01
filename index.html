@@ -568,6 +568,24 @@
         .btn-outline:hover {
             background: rgba(128, 128, 128, 0.1);
         }
+        .citation-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            color: var(--text-main);
+            margin-top: 1rem;
+            line-height: 1.4;
+        }
+
+        [data-theme="light"] .citation-box {
+            background: rgba(0, 0, 0, 0.03);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -581,6 +599,7 @@
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#results">Results</a></li>
                 <li><a href="#examples">Qualitative Examples</a></li>
+                <li><a href="#citation">Citation</a></li>
             </ul>
         </nav>
         <button id="theme-toggle" class="theme-btn">
@@ -1658,6 +1677,18 @@
                     </tbody>
                 </table>
             </div>
+        <section id="citation">
+            <h2>Citation</h2>
+            <p>If you find our work useful in your research, please cite our paper:</p>
+            <div class="citation-box">@misc{seth2026audiohallucinationattacksprobing,
+      title={Audio Hallucination Attacks: Probing the Reliability of Large Audio Language Models}, 
+      author={Ashish Seth and Sonal Kumar and Ramaneswaran Selvakumar and Nishit Anand and Utkarsh Tyagi and Prem Seetharaman and Ramani Duraiswami and Dinesh Manocha},
+      year={2026},
+      eprint={2603.29263},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2603.29263}, 
+}</div>
         </section>
     </main>
 
