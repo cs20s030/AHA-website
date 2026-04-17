@@ -394,10 +394,6 @@
             color: var(--text-main);
         }
 
-        .asr-robust {
-            font-weight: normal;
-        }
-
         .as-badge {
             background: var(--accent);
             padding: 2px 6px;
@@ -779,40 +775,6 @@
                             <td colspan="7">OPEN-SOURCE MODELS</td>
                         </tr>
                         <tr>
-                            <td rowspan="2">R1-AQA</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                            <td>71.68</td>
-                            <td>79.97</td>
-                            <td class="asr-vulnerable">80.14</td>
-                            <td>77.63</td>
-                        </tr>
-                        <tr>
-                            <td>✅</td>
-                            <td>✅</td>
-                            <td class="asr-robust">10.52</td>
-                            <td class="asr-vulnerable">96.49</td>
-                            <td class="asr-robust">10.47</td>
-                            <td>93.22</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Qwen 2.5-Omni</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                            <td>23.58</td>
-                            <td>68.74</td>
-                            <td>28.32</td>
-                            <td class="asr-vulnerable">79.19</td>
-                        </tr>
-                        <tr>
-                            <td>✅</td>
-                            <td>✅</td>
-                            <td>68.87</td>
-                            <td>59.59</td>
-                            <td>94.57</td>
-                            <td class="asr-vulnerable">96.71</td>
-                        </tr>
-                        <tr>
                             <td rowspan="2">Qwen 3-Omni</td>
                             <td>✅</td>
                             <td>❌</td>
@@ -833,7 +795,7 @@
                             <td rowspan="2">Audio Flamingo 3</td>
                             <td>✅</td>
                             <td>❌</td>
-                            <td class="asr-robust">1.90</td>
+                            <td>1.90</td>
                             <td>87.05</td>
                             <td>15.63</td>
                             <td class="asr-vulnerable">89.03</td>
@@ -842,18 +804,18 @@
                             <td>✅</td>
                             <td>✅</td>
                             <td>58.50</td>
-                            <td class="asr-vulnerable">98.66</td>
+                            <td>98.66</td>
                             <td>58.24</td>
-                            <td>99.19</td>
+                            <td class="asr-vulnerable">99.19</td>
                         </tr>
                         <tr>
                             <td rowspan="2">AudioFlamingo-Next</td>
                             <td>✅</td>
                             <td>❌</td>
-                            <td class="asr-robust">3.7</td>
+                            <td>3.7</td>
                             <td>72.7</td>
                             <td>23.8</td>
-                            <td>83.2</td>
+                            <td class="asr-vulnerable">83.2</td>
                         </tr>
                         <tr>
                             <td>✅</td>
@@ -861,7 +823,7 @@
                             <td>25.5</td>
                             <td class="asr-vulnerable">99.2</td>
                             <td>30.6</td>
-                            <td class="asr-vulnerable">98.9</td>
+                            <td>98.9</td>
                         </tr>
                         <tr>
                             <td rowspan="2">AudioFlamingo-Next (Think)</td>
@@ -870,7 +832,7 @@
                             <td>11.1</td>
                             <td>94.5</td>
                             <td>23.7</td>
-                            <td>96.3</td>
+                            <td class="asr-vulnerable">96.3</td>
                         </tr>
                         <tr>
                             <td>✅</td>
@@ -878,27 +840,27 @@
                             <td>22.7</td>
                             <td>90.0</td>
                             <td>45.3</td>
-                            <td>93.0</td>
+                            <td class="asr-vulnerable">93.0</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">MOSS-Audio-4B-Think</td>
+                            <td>✅</td>
+                            <td>❌</td>
+                            <td>6.4</td>
+                            <td>67.3</td>
+                            <td>29.6</td>
+                            <td class="asr-vulnerable">85.6</td>
+                        </tr>
+                        <tr>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>22.3</td>
+                            <td>85.7</td>
+                            <td>41.3</td>
+                            <td class="asr-vulnerable">95.2</td>
                         </tr>
                         <tr class="category-row">
                             <td colspan="7">CLOSED-SOURCE MODELS</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Gemini 3 Pro</td>
-                            <td>✅</td>
-                            <td>❌</td>
-                            <td class="asr-robust">10.88</td>
-                            <td>59.67</td>
-                            <td class="asr-robust">22.02</td>
-                            <td class="asr-vulnerable">71.07</td>
-                        </tr>
-                        <tr>
-                            <td>✅</td>
-                            <td>✅</td>
-                            <td>26.19</td>
-                            <td>67.01</td>
-                            <td>38.82</td>
-                            <td class="asr-vulnerable">79.65</td>
                         </tr>
                         <tr>
                             <td rowspan="2">GPT 4 Audio</td>
@@ -916,6 +878,40 @@
                             <td>64.74</td>
                             <td class="asr-vulnerable">96.32</td>
                             <td>95.93</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Gemini 3 Pro</td>
+                            <td>✅</td>
+                            <td>❌</td>
+                            <td>10.88</td>
+                            <td>59.67</td>
+                            <td>22.02</td>
+                            <td class="asr-vulnerable">71.07</td>
+                        </tr>
+                        <tr>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>26.19</td>
+                            <td>67.01</td>
+                            <td>38.82</td>
+                            <td class="asr-vulnerable">79.65</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Gemini 3.1 Pro</td>
+                            <td>✅</td>
+                            <td>❌</td>
+                            <td>11.6</td>
+                            <td>35.4</td>
+                            <td>50.1</td>
+                            <td class="asr-vulnerable">52.8</td>
+                        </tr>
+                        <tr>
+                            <td>✅</td>
+                            <td>✅</td>
+                            <td>22.6</td>
+                            <td>25.4</td>
+                            <td>50.5</td>
+                            <td class="asr-vulnerable">50.8</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1255,9 +1251,9 @@
                             <td rowspan="2">+ CoT (Chain-of-Thought)</td>
                             <td>✅</td>
                             <td>❌</td>
-                            <td class="asr-robust">13.56</td>
+                            <td>13.56</td>
                             <td>82.90</td>
-                            <td class="asr-robust">21.59</td>
+                            <td>21.59</td>
                             <td>86.87</td>
                         </tr>
                         <tr>
@@ -1274,8 +1270,8 @@
                             </td>
                             <td>✅</td>
                             <td>❌</td>
-                            <td class="asr-robust">13.88</td>
-                            <td class="asr-robust">39.01</td>
+                            <td>13.88</td>
+                            <td>39.01</td>
                             <td>33.16</td>
                             <td>40.24</td>
                         </tr>
@@ -1283,7 +1279,7 @@
                             <td>✅</td>
                             <td>✅</td>
                             <td>68.94</td>
-                            <td class="asr-robust">40.62</td>
+                            <td>40.62</td>
                             <td>67.84</td>
                             <td>86.63</td>
                         </tr>
